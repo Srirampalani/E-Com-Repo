@@ -8,6 +8,8 @@ import { CartComponent } from './component/cart/cart.component';
 import { ProductComponent } from './component/product/product.component';
 import { HttpClientModule } from "@angular/common/http";
 import { FooterComponent } from './component/footer/footer.component';
+import { FilterPipe } from './component/shared/filter.pipe';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,12 +17,15 @@ import { FooterComponent } from './component/footer/footer.component';
     HeaderComponent,
     CartComponent,
     ProductComponent,
-    FooterComponent
+    FooterComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

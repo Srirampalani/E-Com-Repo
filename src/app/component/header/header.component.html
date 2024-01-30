@@ -1,11 +1,12 @@
 <header>
+    <div class="fixed-top">
     <div class="navbar bg-primary shadow-sm">
         <div class="navbar-brand align-item-center d-flex">
             <i style=" color: rgb(238, 238, 234); font-size: 40px;"  class="fas fa-shipping-fast">&nbsp;
             </i>
             <strong style=" color: yellow; font-size: 30px;">GozzyBy</strong>
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="search products">
+                <input type="text" class="form-control" [(ngModel)] ="searchTerm" (keyup) ="search($event)" placeholder="search products">
             </div>
             <span class="fas fa-search search-icon"></span>
         </div>
@@ -15,4 +16,5 @@
 
         </button>
     </div>
+</div>
 </header>
